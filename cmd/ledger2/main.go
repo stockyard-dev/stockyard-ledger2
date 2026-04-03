@@ -26,7 +26,7 @@ func main() {
 	}
 	defer db.Close()
 
-	srv := server.New(db)
+	srv := server.New(db, server.DefaultLimits())
 
 	fmt.Printf("\n  Ledger II — Self-hosted personal finance tracker\n")
 	fmt.Printf("  ─────────────────────────────────\n")
